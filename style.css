@@ -6,9 +6,9 @@
   --neutral-dark: #40464d;
   --neutral-medium: #9fa3a6;
   --brand-color-green: #40b25c;
-  --green-medium-hover: #53CC71; 
+  --green-medium-hover: #53cc71;
   --brand-color-orange: #e36305;
-  --orange-light-hover: #FF8861;
+  --orange-light-hover: #ff8861;
   --brand-color-blue: #40599d;
   --feedback-alert-default: #e63737;
   --feedback-alert-light: #f6cbcb;
@@ -19,7 +19,7 @@
   --font-large-l: 20px;
   --font-large-lg: 24px;
   --font-large-xlg: 32px;
-  }
+}
 
 * {
   margin: 0;
@@ -78,6 +78,29 @@ button:hover {
   opacity: 0.6;
   transition: all 0.3s ease;
 }
+
+/*Modal Add To Cart ====================*/
+.modal.add-cart.on {
+  width: 40%;
+  height: auto;
+  padding: 2rem;
+  color: var(--neutral-dark);
+  background-color: var(--neutral-white);
+  border: 1px solid var(--neutral-light);
+  border-radius: 0 0 10px 10px;
+  box-shadow: 1px 3px 5px var(--neutral-dark);
+  position: fixed;
+  z-index: 10;
+  align-self: flex-end;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  transition: all 0.3s ease;
+}
+
+/*Modal Add To Cart ====================*/
 
 .menu,
 .menu nav,
@@ -218,7 +241,7 @@ header {
   font-size: 0.9rem;
   font-weight: 500;
   text-align: center;
-  padding: .6rem;
+  padding: 0.6rem;
   width: max-content;
 }
 
@@ -294,7 +317,6 @@ section {
   font-size: 1rem;
 }
 
-
 #product .info-product .title-product > div {
   display: flex;
   justify-content: space-between;
@@ -332,8 +354,12 @@ section {
   font-weight: 500;
 }
 
-#product .info-product .details-product .options-product p:not(.info-shipping > p) {
-  margin-bottom: .5rem;
+#product
+  .info-product
+  .details-product
+  .options-product
+  p:not(.info-shipping > p) {
+  margin-bottom: 0.5rem;
 }
 
 #product
@@ -343,7 +369,7 @@ section {
   .colors-options
   > p
   > span {
-  color:  var(--neutral-dark);
+  color: var(--neutral-dark);
   font-size: var(--font-small-sm);
 }
 
@@ -400,7 +426,11 @@ input[type="radio"]:nth-child(3):before {
   text-align: center;
 }
 
-#product .info-product .details-product .options-product input[type="text"]:focus {
+#product
+  .info-product
+  .details-product
+  .options-product
+  input[type="text"]:focus {
   border: 1px solid var(--neutral-dark);
 }
 
@@ -445,7 +475,7 @@ input[type="radio"]:nth-child(3):before {
 #product .details-product .shipping .info-shipping {
   display: flex;
   flex-direction: column;
-  gap: .2rem;
+  gap: 0.2rem;
 }
 
 #product .details-product .shipping .info-shipping > span a {
